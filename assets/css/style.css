@@ -8,6 +8,20 @@ html {
   scroll-behavior: unset !important;
 }
 
+body {
+  background-image: url('../images/website-background.jpg');
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    overflow-x: hidden;
+  }
+  .slider-outer{
+    overflow: visible;
+  }
+}
+
 /* Top Banner Starts Here */
 .top-banner-bg {
   background-size: cover;
@@ -553,7 +567,7 @@ nav {
 
   .couple-bg #couple-bg-flower-right {
     top: 0;
-    width: 140px;
+    width: 90px;
   }
 }
 
@@ -561,7 +575,7 @@ nav {
 
 /* Our Story Section Starts Here */
 .our-story-bg {
-  /* background-color: #f1f3ee; */
+  /* background-color: #fdf7f9; */
   background-image: url('../images/our-story-pink-background.png');
   background-size: cover;
   background-position: center;
@@ -628,7 +642,7 @@ nav {
   width: 100%;
 }
 
-#story-card-left-golden-dots{
+#story-card-left-golden-dots {
   position: absolute;
   top: -5rem;
   left: -3rem;
@@ -717,7 +731,7 @@ nav {
   left: 7rem;
 }
 
-#story-card-right-golden-dots{
+#story-card-right-golden-dots {
   position: absolute;
   bottom: -3rem;
   right: -2rem;
@@ -942,6 +956,12 @@ nav {
   .our-story #white-leaf-3 {
     display: none;
   }
+
+  #story-card-right-golden-dots {
+    bottom: -2rem;
+    right: -2rem;
+    width: 150px;
+  }
 }
 
 /* Our Story Section Ends Here */
@@ -951,6 +971,7 @@ nav {
   background: linear-gradient(180deg, #fdf7f9 10%, rgba(255, 255, 255, 0) 100%);
   padding-bottom: 5rem;
 }
+
 .slider {
   display: flex;
   justify-content: space-between;
@@ -1012,7 +1033,7 @@ nav {
 
 
 /* Impotant Persons Section Start Here */
-.gallery-outer{
+.gallery-outer {
   position: relative;
 }
 
@@ -1094,7 +1115,7 @@ nav {
   border: 0.3rem solid #dbbead;
 }
 
-#gallery-left-flower{
+#gallery-left-flower {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1102,7 +1123,7 @@ nav {
   z-index: -1;
 }
 
-#gallery-golden-top-right{
+#gallery-golden-top-right {
   position: absolute;
   top: -8rem;
   right: -1rem;
@@ -1110,7 +1131,8 @@ nav {
   z-index: -1;
   transform: rotate(90deg);
 }
-#gallery-golden-top-left{
+
+#gallery-golden-top-left {
   position: absolute;
   bottom: -7rem;
   left: 0;
@@ -1164,12 +1186,12 @@ nav {
 /* Impotant Persons Section End Here */
 
 /* Our Wedding Section Starts Here */
-.contact-us-outer{
+.contact-us-outer {
   position: relative;
   overflow: hidden;
 }
 
-#contact-right-flower{
+#contact-right-flower {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1347,6 +1369,10 @@ form .form-right {
 }
 
 @media screen and (max-width: 768px) {
+  #contact-right-flower {
+    display: none;
+  }
+
   .our-wedding {
     padding: 0 0.5rem 2rem 0.5rem;
   }
