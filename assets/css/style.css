@@ -990,31 +990,9 @@ nav {
   width: 100%;
 }
 
-.slider .slider-card .card-overlay {
-  width: 92%;
-  height: 94%;
-  margin: 4% 4%;
-  background-color: #ffffff75;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scale: 0;
-  transition: all 0.3s ease;
-}
-
-.slider .slider-card .card-overlay img {
-  width: 25px;
-}
-
 @media screen and (max-width: 1450px) {
   .slider .slider-card {
     border: 0.45rem solid #be0b4f;
-  }
-
-  .slider .slider-card .card-overlay img {
-    width: 20px;
   }
 }
 
