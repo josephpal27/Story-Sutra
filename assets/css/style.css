@@ -823,7 +823,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   .our-story-bg {
-    margin-top: -21rem;
+    margin-top: -17rem;
   }
 
   .our-story {
@@ -839,7 +839,7 @@ nav {
   }
 
   .our-story .story-head h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .our-story .story-head {
@@ -996,13 +996,50 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .slider .slider-card {
-    border: 0.1rem solid #be0b4f;
-    border-radius: 5px;
+  .slider-outer {
+    padding-bottom: 2rem;
   }
-
-  .slider .slider-card img {
+  .slider{
+    display: none;
+  }
+  .mobile-slider{
+    padding: 0 1rem;
+  }
+  .mobile-slider .slider-card img {
     border-radius: 5px;
+    border: 0.4rem solid #be0b4f;
+  }
+  .mobile-slider .swiper-slide{
+    width: 100%;
+  }
+  .mobile-slider .swiper-slide .slider-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-slider .swiper-pagination{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 3rem;
+  }
+  .mobile-slider .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: #f4e0d8;
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .mobile-slider .swiper-pagination-bullet-active {
+    background: #be0b4f !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-slider{
+    display: none;
   }
 }
 
