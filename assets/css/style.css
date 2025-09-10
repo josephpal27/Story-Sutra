@@ -1711,11 +1711,8 @@ footer .box {
 }
 
 @media screen and (max-width: 768px) {
-  .back-to-top i {
-    font-size: 0.8rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    padding-top: 5.5px;
+  .back-to-top{
+    display: none;
   }
 }
 
